@@ -12,4 +12,15 @@ def hola():
 def goodbay():
     return "chau bro"
 
+
+nombre = "tomasito"
+
+@app.route("/sigma/", defaults={"nombre":None})
+@app.route("/sigma/<nombre>")
+
+
+def kkkkkk(nombre):
+    return "hola " + nombre
+
+
 app.run()
