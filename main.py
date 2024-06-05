@@ -22,5 +22,8 @@ nombre = "tomasito"
 def kkkkkk(nombre):
     return "hola " + nombre
 
+@app.route("/sigma/<nombre>/<apellido>")
+def rutanueva(nombre, apellido):
+    return f"Hola {nombre} {apellido}"
 
 app.run()
